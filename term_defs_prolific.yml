@@ -1,0 +1,94 @@
+# As fine-grained annotation requires complex categories, many successful fine-grained 
+# typologies organize their classification in trees. Our interface is unique in that it can 
+# render any arbitrary annotation tree, no matter its depth or breath. We will begin with 
+# simple annotation setups, and then showcase some complex examples.
+
+# Click the Instructions button to view this :)
+
+instructions: |
+  ## Adding instructions to your interface
+  Instructions are formatted with [Markdown](https://www.markdownguide.org/cheat-sheet/). 
+  You can use the `prepend_instructions` argument to display this text above the interface, or have an "Instructions" button.
+
+  ### Formatting
+  Markdown allows creating **bold** or *italicized* text and:
+  - lists
+  - of
+  - items
+
+  ```
+  You can even add blocks of code
+  ```
+  ---
+
+# Comment this to package the instructions using an "Instructions" button
+# prepend_instructions: true
+
+# ========================================================================================
+# ========================================================================================
+
+
+edits:
+  # You can specify any number of individual questions
+  - name: multi_question
+    label: "Annotate Term"
+    enable_input: true
+    color: blue
+    icon: fa-pen
+    type: single_span
+    annotation:
+      - name: defn_question
+        label: "Definition"
+        question: "Write a one-sentence definition of this term. If you wish to use Google, please use the following search format `define:\"<term>\"`, substituting your identified term for `<term>` (make sure to include the quotation marks)."
+        options: textarea
+      - name: difficulty_question
+        label: "Difficulty"
+        question: "How difficult is defining this term?"
+        options: likert-3
+      - name: category_question
+        label: "Category"
+        question: "Which category would you this term to?"
+        options: 
+          - name: a1
+            label: "Concept/phrase"
+          - name: a2
+            label: "Abbreviation"
+          - name: a3
+            label: "Named Entity"
+          # - name: child_4
+          #   label: "Other"
+      - name: multisense_question
+        label: "Multisense"
+        question: "Does this term have different meanings in other domain contexts? If you're uncertain, choose 'Unsure'."
+        options: 
+          - name: b1
+            label: "Yes"
+          - name: b2
+            label: "No"
+          - name: b3
+            label: "Unsure"
+
+
+
+# ========================================================================================
+# ========================================================================================
+
+template_name: llm_dfs
+template_label: Scientific Concept Identification & Definition
+template_description: TODO
+
+
+display:
+ - side-by-side         # shows text and editor next to each other
+#  - text-side-by-side    # shows source and target next to each other
+#  - disable-lines        # disables lines between annotations which can be distracting
+#  - hide-context         # hides the context by default, adding a "show context" button
+
+crowdsource: "prolific"
+prolific_completion_code: DEFS2024
+
+disable:
+- download        # Disables data download, useful for crowdsourcing
+- upload          # Disables data upload, useful if data is provided with ?d= parameter
+# - selection     # Disables edit selection
+# - annotation      # Disables edit annotation
