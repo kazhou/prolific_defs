@@ -84,8 +84,7 @@ display:
 #  - disable-lines        # disables lines between annotations which can be distracting
 #  - hide-context         # hides the context by default, adding a "show context" button
 
-crowdsource: "prolific"
-prolific_completion_code: DEFS2024
+crowdsource: "custom"
 
 database: 
     type: firebase
