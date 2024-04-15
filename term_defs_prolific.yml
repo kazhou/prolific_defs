@@ -98,7 +98,7 @@ database:
 
 
 disable:
-- download        # Disables data download, useful for crowdsourcing
+# - download        # Disables data download, useful for crowdsourcing
 - upload          # Disables data upload, useful if data is provided with ?d= parameter
 # - selection     # Disables edit selection
 # - annotation      # Disables edit annotation
