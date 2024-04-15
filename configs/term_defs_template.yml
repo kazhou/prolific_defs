@@ -1,0 +1,197 @@
+# As fine-grained annotation requires complex categories, many successful fine-grained 
+# typologies organize their classification in trees. Our interface is unique in that it can 
+# render any arbitrary annotation tree, no matter its depth or breath. We will begin with 
+# simple annotation setups, and then showcase some complex examples.
+
+# Click the Instructions button to view this :)
+
+instructions: |
+  # Please read carefully before starting!
+  
+  ## Description
+  You will be shown 10 scientific abstracts from the <DOMAIN> domain to read, one abstract per HIT. 
+  For each abstract, you will identify phrases or terms that 
+  a curious reader may be unfamilar with and want to define. 
+  After identifying these terms, you will then give a one-sentence definition of each term, and 
+  rate the effort taken and understanding gained from that process.
+  
+  You will be paid $15 upon **successful** completion of this task (each abstract must be annotated, and annotations must be of high quality).
+  
+  **Please use the Google Chrome web browser to do this task.** The interface will not work on Firefox (TODO test other browsers).
+
+  ## Task Instructions
+  
+  ### Identifying terms
+  Read through the provided abstract. As you encounter unfamiliar terms or jargon, identify them in the following steps:
+  - Click the "+ Add Edit" button
+  - Select the "Annotate Term" button
+  - Highlight the term in the abstract. Ensure that it appears after "Selected span: <term>"
+  - Click "Save"
+
+  You will likely have at least 3-5 terms identified per abstract.
+
+  ### Editing annotations
+  After identifying unfamiliar terms in your initial readthrough, you will then add Edits to each term.
+
+  Start by clicking the pencil icon next to a term annotation.
+
+  TODO image example
+
+  There are 5 questions to answer.
+
+  #### 1. Write a definition
+  A "definition" is a statement that includes the **meaning** of the term. 
+  Please write a one-sentence definition for each term you identify.
+  Definitions should be comprehensive as possible. 
+  You may use Google Search to look up resources to assist you -- 
+  if you do, please keep track of roughly how long you spend searching, 
+  and do not spend more than 5 minutes searching.
+
+  If you wish to use Google Search, please use the following search format `define:"<term>"`, 
+  substituting your identified term for `<term>` (make sure to include the quotation marks), e.g., 
+  ```
+  define:"transformer"
+  ```
+  
+  If the results are for the incorrect domain, modify your search to include the domain as well, e.g., 
+  ```
+  define:"transformer" (computer science)
+  ```
+  
+  #### 2. Link sources
+  If you use Google Search to help you write a definition of the term, please link the sources you used in the text box.
+  If you refered to multiple links, separate the links with a space (Space bar) or new line (Enter).
+
+  #### 3. Specifying domains
+  Did you need to specify the domain in your search? If you did not search, select "No". 
+
+  #### 4. Time spent
+  Estimate roughly how much time you spent searching for and writing up this definition, and report it according to the following scale:
+  - 1 - very little (< 1min)
+  - 2 - medium (1-2min)
+  - 3 - a lot (> 3min)
+
+  #### 5. Understanding
+  After writing a definition for the term, report how well you now understand the meaning of this term on the following scale:
+  - 1 - not at all
+  - 2 - a little
+  - 3 - roughly
+  - 4 - well
+  - 5 - very well
+
+  It is ok to not understand the term! Just report honestly.
+  
+  ### Edit "Final comments"
+  Once you have identified terms and defined them in their annotation frames, 
+  please edit the "Comments" entry to answer a final question surrounding your comprehension of the abstract
+  after defining the unfamiliar terms.
+
+  TODO insert picture
+  
+  If you do not see this entry, 
+  please add this entry yourself by clicking "+ Add Edit" > "Comments" > Save,
+  then edit the entry to answer the questions there.
+
+  ---
+
+# Comment this to package the instructions using an "Instructions" button
+prepend_instructions: true
+
+# ========================================================================================
+# ========================================================================================
+
+
+edits:
+  # You can specify any number of individual questions
+  - name: term_annotation
+    label: "Annotate Term"
+    enable_input: true
+    color: blue
+    icon: fa-pen
+    type: single_span
+    annotation:
+      - name: defn_question
+        label: "Definition"
+        question: "1. Write a one-sentence definition of this term. Make sure to follow the instructions above for how to format your search."
+        options: textarea
+      - name: sources_question
+        label: "Sources"
+        question: "2. Please copy and paste the links of any sources you used to help write your above definition."
+        options: textarea 
+      - name: multisense_questions
+        label: "Multisense"
+        question: "3. Did you need to specify the domain in your search?"
+        options: binary
+      - name: difficulty_question
+        label: "Time"
+        question: "4. Roughly how much time did you spend defining this term?"
+        options: 
+          - name: t1
+            label: "1 - very little (< 1min)"
+          - name: t2
+            label: "2 - medium (1-2min)"
+          - name: t3
+            label: "3 - a lot (> 3min)"
+      - name: category_question
+        label: "Understanding"
+        question: "5. How well do you understand the meaning of this term now?"
+        options: 
+          - name: u1
+            label: "1 - not at all"
+          - name: u2
+            label: "2 - a little"
+          - name: u3
+            label: "3 - roughly"
+          - name: u4
+            label: "4 - well"
+          - name: u5
+            label: "5 - very well"
+
+  - name: overall_comments
+    label: "Comments"
+    color: green
+    icon: fa-font
+    annotation:
+      - name: overall_understanding
+        label: "Overall"
+        question: "How much do these definitions help you understand the overall abstract?"
+        options: likert-3
+      - name: elaboration
+        label: "More"
+        question: "Feel free to elaborate or leave comments here:"
+        options: textarea
+        required: false 
+
+
+
+# ========================================================================================
+# ========================================================================================
+
+template_name: llm_dfs
+template_label: Scientific Concept Identification & Definition
+template_description: TODO
+
+
+# display:
+#  - side-by-side         # shows text and editor next to each other
+#  - text-side-by-side    # shows source and target next to each other
+#  - disable-lines        # disables lines between annotations which can be distracting
+#  - hide-context         # hides the context by default, adding a "show context" button
+
+crowdsource: "custom"
+
+database: 
+    type: firebase
+    project_id: prolific-defs
+    url: https://prolific-defs.firebaseio.com/
+    # collection: thresh     # (default: thresh) The database to use, this must exist on the firestore
+    # document: annotation   # (default: annotation) The document to use, this must exist on the firestore
+    field: annotation_set_1  # The document field to store annotations, we recommend changing this value between data collection runs
+
+
+
+disable:
+# - download        # Disables data download, useful for crowdsourcing
+- upload          # Disables data upload, useful if data is provided with ?d= parameter
+# - selection     # Disables edit selection
+# - annotation      # Disables edit annotation
