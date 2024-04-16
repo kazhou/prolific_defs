@@ -9,7 +9,7 @@ instructions: |
   # Please read carefully before starting!
   
   ## Description
-  You will be shown 10 scientific abstracts from the <DOMAIN> domain to read, one abstract per HIT. 
+  You will be shown 10 scientific abstracts from the <DOMAIN> domain to read, one abstract per task. 
   For each abstract, you will identify phrases or terms that 
   a curious reader may be unfamilar with and want to define. 
   After identifying these terms, you will then give a one-sentence definition of each term, and 
@@ -97,9 +97,14 @@ instructions: |
 # Comment this to package the instructions using an "Instructions" button
 prepend_instructions: true
 
-# ========================================================================================
-# ========================================================================================
 
+interface_text:
+  typology:
+    context_label: "Title"
+    source_label: "Abstract"
+
+# ========================================================================================
+# ========================================================================================
 
 edits:
   # You can specify any number of individual questions
@@ -146,7 +151,6 @@ edits:
             label: "4 - well"
           - name: und_5
             label: "5 - very well"
-
   - name: overall_comments
     label: "Comments"
     color: green
