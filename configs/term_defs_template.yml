@@ -20,6 +20,9 @@ instructions: |
   **Please use the Google Chrome web browser to do this task.** The interface will not work on Firefox (TODO test other browsers).
 
   ## Task Instructions
+
+  [Example interface](https://chicagohai.github.io/thresh/?gh=kazhou/prolific_defs/main/configs/term_defs_template.yml&CNET_ID=example&EXP_ID=exp&SESSION_ID=1&d=kazhou/prolific_defs/main/data/example_data.json)
+
   
   ### Identifying terms
   Read through the provided abstract. As you encounter unfamiliar terms or jargon, identify them in the following steps:
