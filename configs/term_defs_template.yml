@@ -126,25 +126,25 @@ edits:
         label: "Time"
         question: "4. Roughly how much time did you spend defining this term?"
         options: 
-          - name: t1
+          - name: time_1
             label: "1 - very little (< 1min)"
-          - name: t2
+          - name: time_2
             label: "2 - medium (1-2min)"
-          - name: t3
+          - name: time_3
             label: "3 - a lot (> 3min)"
       - name: category_question
         label: "Understanding"
         question: "5. How well do you understand the meaning of this term now?"
         options: 
-          - name: u1
+          - name: und_1
             label: "1 - not at all"
-          - name: u2
+          - name: und_2
             label: "2 - a little"
-          - name: u3
+          - name: und_3
             label: "3 - roughly"
-          - name: u4
+          - name: und_4
             label: "4 - well"
-          - name: u5
+          - name: und_5
             label: "5 - very well"
 
   - name: overall_comments
