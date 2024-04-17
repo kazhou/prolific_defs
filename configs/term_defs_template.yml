@@ -19,15 +19,17 @@ instructions: |
   
   **Please use the Google Chrome web browser to do this task.** The interface will not work on other browsers.
 
+  ---
+
   ## Task Instructions
 
   [Example interface](https://chicagohai.github.io/thresh/?gh=kazhou/prolific_defs/main/configs/term_defs_template.yml&CNET_ID=example&EXP_ID=exp&SESSION_ID=1&d=kazhou/prolific_defs/main/data/example_data.json)
 
   As you proceed, save your work by clicking the `up-arrow-cloud` (Save Progress) button.
   Restore your last save by clicking the `down-arrow-cloud` (Restore Last Save) button. 
-  ** Refreshing this browser window will remove existing progress, so make sure to save often! **
+  **Refreshing this browser window will remove existing progress, so make sure to save often!**
   
-  ### Identifying terms
+  ### 1. Identifying terms
   Read through the provided abstract. As you encounter unfamiliar terms or jargon, identify them in the following steps:
   - Click the "+ Add Edit" button
   - Select the "Annotate Term" button
@@ -36,14 +38,14 @@ instructions: |
 
   You will likely have at least 3-5 terms identified per abstract.
 
-  ### Editing annotations
+  ### 2. Editing annotations
   After identifying unfamiliar terms in your initial readthrough, you will then add Edits to each term.
 
   Start by clicking the pencil icon next to a term annotation.
 
   There are 5 questions to answer.
 
-  #### 1. Write a definition
+  #### 2.1 Write a definition
   A "definition" is a statement that includes the **meaning** of the term. 
   Please write a one-sentence definition for each term you identify.
   Definitions should be comprehensive as possible. 
@@ -54,29 +56,25 @@ instructions: |
 
   If you wish to use Google Search, please use the following search format `define:"<term>"`, 
   substituting your identified term for `<term>` (make sure to include the quotation marks), e.g., 
-  ```
-  define:"transformer"
-  ```
+  >define:"transformer"
   
   If the results are for the incorrect domain, modify your search to include the domain as well, e.g., 
-  ```
-  define:"transformer" (computer science)
-  ```
+  >define:"transformer" (computer science)
   
-  #### 2. Link sources
+  #### 2.2 Link sources
   If you use Google Search to help you write a definition of the term, please link the sources you used in the text box.
   If you refered to multiple links, separate the links with a space (Space bar).
 
-  #### 3. Specifying domains
+  #### 2.3 Specifying domains
   Did you need to specify the domain in your search? If you did not search, select "No". 
 
-  #### 4. Time spent
+  #### 2.4 Time spent
   Estimate roughly how much time you spent searching for and writing up this definition, and report it according to the following scale:
   - 1 - very little (< 1min)
   - 2 - medium (1-2min)
   - 3 - a lot (> 3min)
 
-  #### 5. Understanding
+  #### 2.5 Understanding
   After writing a definition for the term, report how well you now understand the meaning of this term on the following scale:
   - 1 - not at all
   - 2 - a little
@@ -86,7 +84,7 @@ instructions: |
 
   It is ok to not understand the term! Just report honestly.
   
-  ### Edit "Final comments"
+  ### 3. Edit "Final comments"
   Once you have identified terms and defined them in their annotation frames, 
   please edit the "Comments" entry to answer a final question surrounding your comprehension of the abstract
   after defining the unfamiliar terms.
@@ -95,13 +93,14 @@ instructions: |
   please add this entry yourself by clicking "+ Add Edit" > "Comments" > Save,
   then edit the entry to answer the questions there.
 
+  ---
 
   ## Submission
   After you have completed all 10 Tasks following the above instructions, 
   you can submit your annotations by clicking the `Submit` button on the last Task.
   You may close your browser window once you have submitted.
 
-  Thank you!
+  **Thank you!**
 
   ---
 
