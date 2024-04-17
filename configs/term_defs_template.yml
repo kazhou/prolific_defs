@@ -17,12 +17,15 @@ instructions: |
   
   You will be paid $15 upon **successful** completion of this task (each abstract must be annotated, and annotations must be of high quality).
   
-  **Please use the Google Chrome web browser to do this task.** The interface will not work on Firefox (TODO test other browsers).
+  **Please use the Google Chrome web browser to do this task.** The interface will not work on other browsers.
 
   ## Task Instructions
 
   [Example interface](https://chicagohai.github.io/thresh/?gh=kazhou/prolific_defs/main/configs/term_defs_template.yml&CNET_ID=example&EXP_ID=exp&SESSION_ID=1&d=kazhou/prolific_defs/main/data/example_data.json)
 
+  As you proceed, save your work by clicking the `up-arrow-cloud` (Save Progress) button.
+  Restore your last save by clicking the `down-arrow-cloud` (Restore Last Save) button. 
+  ** Refreshing this browser window will remove existing progress, so make sure to save often! **
   
   ### Identifying terms
   Read through the provided abstract. As you encounter unfamiliar terms or jargon, identify them in the following steps:
@@ -38,8 +41,6 @@ instructions: |
 
   Start by clicking the pencil icon next to a term annotation.
 
-  TODO image example
-
   There are 5 questions to answer.
 
   #### 1. Write a definition
@@ -47,7 +48,8 @@ instructions: |
   Please write a one-sentence definition for each term you identify.
   Definitions should be comprehensive as possible. 
   You may use Google Search to look up resources to assist you -- 
-  if you do, please keep track of roughly how long you spend searching, 
+  if you do, **please open a new browser window/tab to do so**.
+  Also, please keep track of roughly how long you spend searching, 
   and do not spend more than 5 minutes searching.
 
   If you wish to use Google Search, please use the following search format `define:"<term>"`, 
@@ -88,12 +90,18 @@ instructions: |
   Once you have identified terms and defined them in their annotation frames, 
   please edit the "Comments" entry to answer a final question surrounding your comprehension of the abstract
   after defining the unfamiliar terms.
-
-  TODO insert picture
   
   If you do not see this entry, 
   please add this entry yourself by clicking "+ Add Edit" > "Comments" > Save,
   then edit the entry to answer the questions there.
+
+
+  ## Submission
+  After you have completed all 10 Tasks following the above instructions, 
+  you can submit your annotations by clicking the `Submit` button on the last Task.
+  You may close your browser window once you have submitted.
+
+  Thank you!
 
   ---
 
