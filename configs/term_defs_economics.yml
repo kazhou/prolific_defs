@@ -25,11 +25,11 @@ edits:
   - label: Time
     name: difficulty_question
     options:
-    - label: 1 - very little (< 1min)
+    - label: 1 - very little (&lt; 1min)
       name: time_1
     - label: 2 - medium (1-2min)
       name: time_2
-    - label: 3 - a lot (> 3min)
+    - label: 3 - a lot (&gt; 3min)
       name: time_3
     question: 4. Roughly how much time did you spend defining this term?
   - label: Understanding
