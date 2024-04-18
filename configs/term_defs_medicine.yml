@@ -76,7 +76,7 @@ instructions: "# Please read carefully before starting!\n\n## Description\nYou w
   \ task (each abstract must be annotated, and annotations must be of high quality).\n\
   \n**Please use the Google Chrome web browser to do this task.** The interface will\
   \ not work on other browsers.\n\n---\n\n## Task Instructions\n\nPlease take a look\
-  \ at this [Example Interface](https://chicagohai.github.io/thresh/?gh=kazhou/prolific_defs/main/configs/term_defs_example.yml&CNET_ID=example&EXP_ID=exp&SESSION_ID=1&d=kazhou/prolific_defs/main/data/example_data.json).\n\
+  \ at this [Example Interface](https://chicagohai.github.io/thresh/?gh=kazhou/prolific_defs/main/configs/term_defs_example.yml&d=kazhou/prolific_defs/main/data/example_data.json).\n\
   \nAs you proceed, save your work by clicking the `up-arrow-cloud` (Save Progress)\
   \ button.\nRestore your last save by clicking the `down-arrow-cloud` (Restore Last\
   \ Save) button. \n**Refreshing this browser window will remove existing progress,\
@@ -118,10 +118,6 @@ instructions: "# Please read carefully before starting!\n\n## Description\nYou w
   After you have completed all 10 Tasks following the above instructions, \nyou can\
   \ submit your annotations by clicking the `Submit` button on the last Task.\nYou\
   \ may close your browser window once you have submitted.\n\n**Thank you!**\n\n---\n"
-interface_text:
-  typology:
-    context_label: Title
-    source_label: Abstract
 prepend_instructions: true
 template_description: TODO
 template_label: Scientific Concept Identification & Definition

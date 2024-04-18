@@ -24,7 +24,7 @@ instructions: |
 
   ## Task Instructions
 
-  Please take a look at this [Example Interface](https://chicagohai.github.io/thresh/?gh=kazhou/prolific_defs/main/configs/term_defs_example.yml&CNET_ID=example&EXP_ID=exp&SESSION_ID=1&d=kazhou/prolific_defs/main/data/example_data.json).
+  Please take a look at this [Example Interface](https://chicagohai.github.io/thresh/?gh=kazhou/prolific_defs/main/configs/term_defs_example.yml&d=kazhou/prolific_defs/main/data/example_data.json).
 
   As you proceed, save your work by clicking the `up-arrow-cloud` (Save Progress) button.
   Restore your last save by clicking the `down-arrow-cloud` (Restore Last Save) button. 
@@ -111,10 +111,10 @@ instructions: |
 prepend_instructions: true
 
 
-interface_text:
-  typology:
-    context_label: "Title"
-    source_label: "Abstract"
+# interface_text:
+#   typology:
+#     context_label: "Title"
+#     source_label: "Abstract"
 
 # ========================================================================================
 # ========================================================================================
