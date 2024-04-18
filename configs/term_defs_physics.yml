@@ -1,0 +1,128 @@
+crowdsource: custom
+database:
+  collection: thresh
+  document: annotations
+  domain: physics
+  project_id: prolific-defs
+  type: firebase
+  url: https://prolific-defs.firebaseio.com/
+edits:
+- annotation:
+  - label: Definition
+    name: defn_question
+    options: textarea
+    question: 1. Write a one-sentence definition of this term. Make sure to follow
+      the instructions above for how to format your search.
+  - label: Sources
+    name: sources_question
+    options: textarea
+    question: 2. Please copy and paste the links of any sources you used to help write
+      your above definition.
+  - label: Multisense
+    name: multisense_questions
+    options: binary
+    question: 3. Did you need to specify the domain in your search?
+  - label: Time
+    name: difficulty_question
+    options:
+    - label: 1 - very little (< 1min)
+      name: time_1
+    - label: 2 - medium (1-2min)
+      name: time_2
+    - label: 3 - a lot (> 3min)
+      name: time_3
+    question: 4. Roughly how much time did you spend defining this term?
+  - label: Understanding
+    name: category_question
+    options:
+    - label: 1 - not at all
+      name: und_1
+    - label: 2 - a little
+      name: und_2
+    - label: 3 - roughly
+      name: und_3
+    - label: 4 - well
+      name: und_4
+    - label: 5 - very well
+      name: und_5
+    question: 5. How well do you understand the meaning of this term now?
+  color: blue
+  enable_input: true
+  icon: fa-pen
+  label: Annotate Term
+  name: term_annotation
+  type: single_span
+- annotation:
+  - label: Overall
+    name: overall_understanding
+    options: likert-3
+    question: How much do these definitions help you understand the overall abstract?
+  - label: More
+    name: elaboration
+    options: textarea
+    question: 'Feel free to elaborate or leave comments here:'
+    required: false
+  color: green
+  icon: fa-font
+  label: Comments
+  name: overall_comments
+instructions: "# Please read carefully before starting!\n\n## Description\nYou will\
+  \ be shown 10 scientific abstracts from the PHYSICS domain to read, \none abstract\
+  \ per Task. \nFor each abstract, you will identify complex, domain-specific concepts\
+  \ or jargon \nthat contribute to increased difficulty of reading and understanding\
+  \ the passage.\nAfter identifying these terms, you will then give a one-sentence\
+  \ definition of each term, and \nrate the effort taken and understanding gained\
+  \ from that process.\n\nYou will be paid $15 upon **successful** completion of this\
+  \ task (each abstract must be annotated, and annotations must be of high quality).\n\
+  \n**Please use the Google Chrome web browser to do this task.** The interface will\
+  \ not work on other browsers.\n\n---\n\n## Task Instructions\n\nPlease take a look\
+  \ at this [Example Interface](https://chicagohai.github.io/thresh/?gh=kazhou/prolific_defs/main/configs/term_defs_template.yml&CNET_ID=example&EXP_ID=exp&SESSION_ID=1&d=kazhou/prolific_defs/main/data/example_data.json).\n\
+  \nAs you proceed, save your work by clicking the `up-arrow-cloud` (Save Progress)\
+  \ button.\nRestore your last save by clicking the `down-arrow-cloud` (Restore Last\
+  \ Save) button. \n**Refreshing this browser window will remove existing progress,\
+  \ so make sure to save often!**\n\n### 1. Identifying terms\nRead through the provided\
+  \ abstract. \nAs you encounter complex terms or jargon, \nidentify them in the following\
+  \ steps:\n- Click the \"+ Add Edit\" button\n- Select the \"Annotate Term\" button\n\
+  - Highlight the term in the abstract. Ensure that it appears after \"Selected span:\
+  \ <term>\"\n- Click \"Save\"\n\nYou will likely have at least 3-5 terms identified\
+  \ per abstract.\n\n### 2. Editing annotations\nAfter identifying unfamiliar terms\
+  \ in your initial readthrough, you will then add Edits to each term.\n\nStart by\
+  \ clicking the pencil icon next to a term annotation.\n\nThere are 5 questions to\
+  \ answer.\n\n#### 2.1 Write a definition\nA \"definition\" is a statement that includes\
+  \ the **meaning** of the term. \nPlease write a one-sentence definition for each\
+  \ term you identify.\nDefinitions should be comprehensive as possible. \nYou may\
+  \ use Google Search to look up resources to assist you -- \nif you do, **please\
+  \ open a new browser window/tab to do so**.\nAlso, please keep track of roughly\
+  \ how long you spend searching, \nand do not spend more than 5 minutes searching.\n\
+  \nIf you wish to use Google Search, please use the following search format `define:\"\
+  <term>\"`, \nsubstituting your identified term for `<term>` (make sure to include\
+  \ the quotation marks), e.g., \n>define:\"transformer\"\n\nIf the results are for\
+  \ the incorrect domain, modify your search to include the domain as well, e.g.,\
+  \ \n>define:\"transformer\" (computer science)\n\n#### 2.2 Link sources\nIf you\
+  \ use Google Search to help you write a definition of the term, please link the\
+  \ sources you used in the text box.\nIf you refered to multiple links, separate\
+  \ the links with a space (Space bar).\n\n#### 2.3 Specifying domains\nDid you need\
+  \ to specify the domain in your search? If you did not search, select \"No\". \n\
+  \n#### 2.4 Time spent\nEstimate roughly how much time you spent searching for and\
+  \ writing up this definition, and report it according to the following scale:\n\
+  - 1 - very little (< 1min)\n- 2 - medium (1-2min)\n- 3 - a lot (> 3min)\n\n####\
+  \ 2.5 Understanding\nAfter writing a definition for the term, report how well you\
+  \ now understand the meaning of this term on the following scale:\n- 1 - not at\
+  \ all\n- 2 - a little\n- 3 - roughly\n- 4 - well\n- 5 - very well\n\nIt is ok to\
+  \ not understand the term! Just report honestly.\n\n### 3. Edit \"Final comments\"\
+  \nOnce you have identified terms and defined them in their annotation frames, \n\
+  please edit the \"Comments\" entry to answer a final question surrounding your comprehension\
+  \ of the abstract\nafter defining the unfamiliar terms.\n\nIf you do not see this\
+  \ entry, \nplease add this entry yourself by clicking \"+ Add Edit\" > \"Comments\"\
+  \ > Save,\nthen edit the entry to answer the questions there.\n\n---\n\n## Submission\n\
+  After you have completed all 10 Tasks following the above instructions, \nyou can\
+  \ submit your annotations by clicking the `Submit` button on the last Task.\nYou\
+  \ may close your browser window once you have submitted.\n\n**Thank you!**\n\n---\n"
+interface_text:
+  typology:
+    context_label: Title
+    source_label: Abstract
+prepend_instructions: true
+template_description: TODO
+template_label: Scientific Concept Identification & Definition
+template_name: llm_dfs

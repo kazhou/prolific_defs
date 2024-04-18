@@ -203,9 +203,9 @@ database:
     url: https://prolific-defs.firebaseio.com/
     collection: thresh     # (default: thresh) The database to use, this must exist on the firestore
     document: annotations   # (default: annotations) The document to use, this must exist on the firestore
+    domain: template
     # field: annotation_set_1  # The document field to store annotations, we recommend changing this value between data collection runs
 
-default_data_link: https://github.com/kazhou/prolific_defs/blob/main/data/example_data.json
 # disable:
 # - download        # Disables data download, useful for crowdsourcing
 # - upload          # Disables data upload, useful if data is provided with ?d= parameter
