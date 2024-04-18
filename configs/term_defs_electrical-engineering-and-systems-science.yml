@@ -76,7 +76,7 @@ instructions: "# Please read carefully before starting!\n\n## Description\nYou w
   \ completion of this task (each abstract must be annotated, and annotations must\
   \ be of high quality).\n\n**Please use the Google Chrome web browser to do this\
   \ task.** The interface will not work on other browsers.\n\n---\n\n## Task Instructions\n\
-  \nPlease take a look at this [Example Interface](https://chicagohai.github.io/thresh/?gh=kazhou/prolific_defs/main/configs/term_defs_template.yml&CNET_ID=example&EXP_ID=exp&SESSION_ID=1&d=kazhou/prolific_defs/main/data/example_data.json).\n\
+  \nPlease take a look at this [Example Interface](https://chicagohai.github.io/thresh/?gh=kazhou/prolific_defs/main/configs/term_defs_example.yml&CNET_ID=example&EXP_ID=exp&SESSION_ID=1&d=kazhou/prolific_defs/main/data/example_data.json).\n\
   \nAs you proceed, save your work by clicking the `up-arrow-cloud` (Save Progress)\
   \ button.\nRestore your last save by clicking the `down-arrow-cloud` (Restore Last\
   \ Save) button. \n**Refreshing this browser window will remove existing progress,\
