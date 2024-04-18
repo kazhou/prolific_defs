@@ -145,14 +145,14 @@ edits:
         question: "4. Roughly how much time did you spend defining this term?"
         options: 
           - name: time_1
-            label: "1 - very little (&lt; 1min)"
+            label: "Not much (under 1min)"
           - name: time_2
-            label: "2 - medium (1-2min)"
+            label: "Some time (1-2min)"
           - name: time_3
-            label: "3 - a lot (&gt; 3min)"
+            label: "A lot (over 3min)"
       - name: category_question
         label: "Understanding"
-        question: "5. How well do you understand the meaning of this term now?"
+        question: "5. On a scale of 1-5, how well do you understand the meaning of this term now?"
         options: 
           - name: und_1
             label: "1 - not at all"
