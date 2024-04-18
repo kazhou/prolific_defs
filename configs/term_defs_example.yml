@@ -111,10 +111,10 @@ instructions: |
 prepend_instructions: true
 
 
-# interface_text:
-#   typology:
-#     context_label: "Title"
-#     source_label: "Abstract"
+interface_text:
+  typology:
+    context_label: "Title"
+    source_label: "Abstract"
 
 # ========================================================================================
 # ========================================================================================
