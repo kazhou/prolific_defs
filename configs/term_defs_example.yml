@@ -68,19 +68,22 @@ instructions: |
   >define:"transformer" (computer science)
 
   An example definition for the term "antecedents" (legal) might be:
-  >Antecedents are the previous convictions and history of bad behavior of a defendant in a criminal case. 
+  ```
+  Antecedents are the previous convictions and history of bad behavior of a defendant in a criminal case. 
+  ```
 
   #### 2.2 Provide a simplified definition
   After writing your first definition, please rewrite the definition in simpler language, 
   as if you were defining the term to a 10-year-old. Please keep this definition to 1-2 sentences.
 
   An example simplified definition for the term "antecedents" (legal) might be:
-  >Antecedents are the bad things that a person accused of a crime has done before. 
+  ```
+  Antecedents are the bad things that a person accused of a crime has done before. 
+  ```
   
   #### 2.3 Link sources
   If you use Google Search to help you write the definition(s) of the term, please link the sources you used in the text box.
   If you refered to multiple links, separate the links with a space (Space bar).
-  E.g., `https://en.wikipedia.org/wiki/Antecedent_(law) https://www.legalchoices.org.uk/dictionary/antecedents`
 
   #### 2.4 Specifying domains
   Did you need to specify the domain in your search? If you did not search, select "No". 
