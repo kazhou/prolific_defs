@@ -11,23 +11,23 @@ edits:
   - label: Definition
     name: defn_original
     options: textarea
-    question: "1. Write a comprehensive definition of this term in 1-2 sentences that\
-      \ would aid a reader\u2019s understanding of this abstract. Make sure to follow\
-      \ the instructions above for how to format your search."
+    question: "Q1. Write a comprehensive definition of this term in 1-2 sentences\
+      \ that would aid a reader\u2019s understanding of this abstract. Make sure to\
+      \ follow the instructions above for how to format your search."
   - label: Simple Definition
     name: defn_simple
     options: textarea
-    question: 2. Now, rewrite the same definition using simpler language, as if you
+    question: Q2. Now, rewrite the same definition using simpler language, as if you
       were defining it to a 10 year old.
   - label: Sources
     name: sources_question
     options: textarea
-    question: 3. Please copy and paste the links of any sources you used to help write
-      your above definitions.
+    question: Q3. Please copy and paste the links of any sources you used to help
+      write your above definitions.
   - label: Multisense
     name: multisense_questions
     options: binary
-    question: 4. Did you need to specify the domain in your search?
+    question: Q4. Did you need to specify the domain in your search?
   - label: Time
     name: difficulty_question
     options:
@@ -37,7 +37,7 @@ edits:
       name: time_2
     - label: A lot (over 3min)
       name: time_3
-    question: 5. Roughly how much time did you spend defining this term?
+    question: Q5. Roughly how much time did you spend defining this term in Q1?
   - label: Understanding
     name: category_question
     options:
@@ -51,7 +51,7 @@ edits:
       name: und_4
     - label: 5 - very well
       name: und_5
-    question: 6. On a scale of 1-5, how well do you understand the meaning of this
+    question: Q6. On a scale of 1-5, how well do you understand the meaning of this
       term now?
   color: blue
   enable_input: true
@@ -105,29 +105,35 @@ instructions: "# Please read carefully before starting!\n\n## Description\nYou w
   <term>\"`, \nsubstituting your identified term for `<term>` (make sure to include\
   \ the quotation marks), e.g., \n>define:\"transformer\"\n\nIf the results are for\
   \ the incorrect domain, modify your search to include the domain as well, e.g.,\
-  \ \n>define:\"transformer\" (computer science)\n\n#### 2.2 Provide a simplified\
-  \ definition\nAfter writing your first definition, please rewrite the definition\
-  \ in simpler language, \nas if you were defining the term to a 10-year-old. Please\
-  \ keep this definition to 1-2 sentences.\n\n#### 2.3 Link sources\nIf you use Google\
-  \ Search to help you write the definition(s) of the term, please link the sources\
-  \ you used in the text box.\nIf you refered to multiple links, separate the links\
-  \ with a space (Space bar).\n\n#### 2.4 Specifying domains\nDid you need to specify\
-  \ the domain in your search? If you did not search, select \"No\". \n\n#### 2.5\
-  \ Time spent\nEstimate roughly how much time you spent searching for and writing\
-  \ up this definition, and report it according to the following scale:\n- 1 - very\
-  \ little (< 1min)\n- 2 - medium (1-2min)\n- 3 - a lot (> 3min)\n\n#### 2.6 Understanding\n\
-  After writing a definition for the term, report how well you now understand the\
-  \ meaning of this term on the following scale:\n- 1 - not at all\n- 2 - a little\n\
-  - 3 - roughly\n- 4 - well\n- 5 - very well\n\nIt is ok to not understand the term!\
-  \ Just report honestly.\n\n### 3. Edit \"Final comments\"\nOnce you have identified\
-  \ terms and defined them in their annotation frames, \nplease edit the \"Comments\"\
-  \ entry to answer a final question surrounding your comprehension of the abstract\n\
-  after defining the unfamiliar terms.\n\nIf you do not see this entry, \nplease add\
-  \ this entry yourself by clicking \"+ Add Edit\" > \"Comments\" > Save,\nthen edit\
-  \ the entry to answer the questions there.\n\n---\n\n## Submission\nAfter you have\
-  \ completed all 10 Tasks following the above instructions, \nyou can submit your\
-  \ annotations by clicking the `Submit` button on the last Task.\nYou may close your\
-  \ browser window once you have submitted.\n\n**Thank you!**\n\n---\n"
+  \ \n>define:\"transformer\" (computer science)\n\nAn example definition for the\
+  \ term \"antecedents\" (legal) might be:\n>Antecedents are the previous convictions\
+  \ and history of bad behavior of a defendant in a criminal case. \n\n#### 2.2 Provide\
+  \ a simplified definition\nAfter writing your first definition, please rewrite the\
+  \ definition in simpler language, \nas if you were defining the term to a 10-year-old.\
+  \ Please keep this definition to 1-2 sentences.\n\nAn example simplified definition\
+  \ for the term \"antecedents\" (legal) might be:\n>Antecedents are the bad things\
+  \ that a person accused of a crime has done before. \n\n#### 2.3 Link sources\n\
+  If you use Google Search to help you write the definition(s) of the term, please\
+  \ link the sources you used in the text box.\nIf you refered to multiple links,\
+  \ separate the links with a space (Space bar).\nE.g., `https://en.wikipedia.org/wiki/Antecedent_(law)\
+  \ https://www.legalchoices.org.uk/dictionary/antecedents`\n\n#### 2.4 Specifying\
+  \ domains\nDid you need to specify the domain in your search? If you did not search,\
+  \ select \"No\". \n\n#### 2.5 Time spent\nEstimate roughly how much time you spent\
+  \ searching for and writing up the definition in 2.1, and report it according to\
+  \ the following scale:\n- 1 - very little (< 1min)\n- 2 - medium (1-2min)\n- 3 -\
+  \ a lot (> 3min)\n\n#### 2.6 Understanding\nAfter writing a definition for the term,\
+  \ report how well you now understand the meaning of this term on the following scale:\n\
+  - 1 - not at all\n- 2 - a little\n- 3 - roughly\n- 4 - well\n- 5 - very well\n\n\
+  It is ok to not understand the term! Just report honestly.\n\n### 3. Edit \"Final\
+  \ comments\"\nOnce you have identified terms and defined them in their annotation\
+  \ frames, \nplease edit the \"Comments\" entry to answer a final question surrounding\
+  \ your comprehension of the abstract\nafter defining the unfamiliar terms.\n\nIf\
+  \ you do not see this entry, \nplease add this entry yourself by clicking \"+ Add\
+  \ Edit\" > \"Comments\" > Save,\nthen edit the entry to answer the questions there.\n\
+  \n---\n\n## Submission\nAfter you have completed all 10 Tasks following the above\
+  \ instructions, \nyou can submit your annotations by clicking the `Submit` button\
+  \ on the last Task.\nYou may close your browser window once you have submitted.\n\
+  \n**Thank you!**\n\n---\n"
 interface_text:
   typology:
     context_label: Title

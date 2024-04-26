@@ -67,19 +67,26 @@ instructions: |
   If the results are for the incorrect domain, modify your search to include the domain as well, e.g., 
   >define:"transformer" (computer science)
 
+  An example definition for the term "antecedents" (legal) might be:
+  >Antecedents are the previous convictions and history of bad behavior of a defendant in a criminal case. 
+
   #### 2.2 Provide a simplified definition
   After writing your first definition, please rewrite the definition in simpler language, 
   as if you were defining the term to a 10-year-old. Please keep this definition to 1-2 sentences.
+
+  An example simplified definition for the term "antecedents" (legal) might be:
+  >Antecedents are the bad things that a person accused of a crime has done before. 
   
   #### 2.3 Link sources
   If you use Google Search to help you write the definition(s) of the term, please link the sources you used in the text box.
   If you refered to multiple links, separate the links with a space (Space bar).
+  E.g., `https://en.wikipedia.org/wiki/Antecedent_(law) https://www.legalchoices.org.uk/dictionary/antecedents`
 
   #### 2.4 Specifying domains
   Did you need to specify the domain in your search? If you did not search, select "No". 
 
   #### 2.5 Time spent
-  Estimate roughly how much time you spent searching for and writing up this definition, and report it according to the following scale:
+  Estimate roughly how much time you spent searching for and writing up the definition in 2.1, and report it according to the following scale:
   - 1 - very little (< 1min)
   - 2 - medium (1-2min)
   - 3 - a lot (> 3min)
@@ -137,23 +144,23 @@ edits:
     annotation:
       - name: defn_original
         label: "Definition"
-        question: "1. Write a comprehensive definition of this term in 1-2 sentences that would aid a reader’s understanding of this abstract. Make sure to follow the instructions above for how to format your search."
+        question: "Q1. Write a comprehensive definition of this term in 1-2 sentences that would aid a reader’s understanding of this abstract. Make sure to follow the instructions above for how to format your search."
         options: textarea
       - name: defn_simple
         label: "Simple Definition"
-        question: "2. Now, rewrite the same definition using simpler language, as if you were defining it to a 10 year old."
+        question: "Q2. Now, rewrite the same definition using simpler language, as if you were defining it to a 10 year old."
         options: textarea
       - name: sources_question
         label: "Sources"
-        question: "3. Please copy and paste the links of any sources you used to help write your above definitions."
+        question: "Q3. Please copy and paste the links of any sources you used to help write your above definitions."
         options: textarea 
       - name: multisense_questions
         label: "Multisense"
-        question: "4. Did you need to specify the domain in your search?"
+        question: "Q4. Did you need to specify the domain in your search?"
         options: binary
       - name: difficulty_question
         label: "Time"
-        question: "5. Roughly how much time did you spend defining this term?"
+        question: "Q5. Roughly how much time did you spend defining this term in Q1?"
         options: 
           - name: time_1
             label: "Not much (under 1min)"
@@ -163,7 +170,7 @@ edits:
             label: "A lot (over 3min)"
       - name: category_question
         label: "Understanding"
-        question: "6. On a scale of 1-5, how well do you understand the meaning of this term now?"
+        question: "Q6. On a scale of 1-5, how well do you understand the meaning of this term now?"
         options: 
           - name: und_1
             label: "1 - not at all"
