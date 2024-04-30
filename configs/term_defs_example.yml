@@ -80,7 +80,7 @@ instructions: |
   ```
   Antecedents are the bad things that a person accused of a crime has done before. 
   ```
-  
+
   #### 2.3 Link sources
   If you use Google Search to help you write the definition(s) of the term, please link the sources you used in the text box.
   If you refered to multiple links, separate the links with a space (Space bar).
@@ -123,9 +123,6 @@ instructions: |
   **Thank you!**
 
   ---
-
-# Comment this to package the instructions using an "Instructions" button
-prepend_instructions: true
 
 
 interface_text:
@@ -196,7 +193,7 @@ edits:
         options: likert-3
       - name: elaboration
         label: "More"
-        question: "Feel free to elaborate or leave comments here:"
+        question: "Feel free to elaborate or leave comments here. Make sure to save your progress!"
         options: textarea
         required: false 
 
@@ -227,8 +224,8 @@ database:
     domain: template
     # field: annotation_set_1  # The document field to store annotations, we recommend changing this value between data collection runs
 
-# disable:
-# - download        # Disables data download, useful for crowdsourcing
-# - upload          # Disables data upload, useful if data is provided with ?d= parameter
+disable:
+- download        # Disables data download, useful for crowdsourcing
+- upload          # Disables data upload, useful if data is provided with ?d= parameter
 # - selection     # Disables edit selection
 # - annotation      # Disables edit annotation

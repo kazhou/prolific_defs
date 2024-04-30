@@ -67,16 +67,17 @@ edits:
   - label: More
     name: elaboration
     options: textarea
-    question: 'Feel free to elaborate or leave comments here:'
+    question: Feel free to elaborate or leave comments here. Make sure to save your
+      progress!
     required: false
   color: green
   icon: fa-font
   label: Comments
   name: overall_comments
 instructions: "# Please read carefully before starting!\n\n## Description\nYou will\
-  \ be shown 10 scientific abstracts from the MEDICINE domain to read, \none abstract\
-  \ per Task. \nFor each abstract, you will identify complex, domain-specific concepts\
-  \ or jargon \nthat contribute to increased difficulty of reading and understanding\
+  \ be shown 10 scientific abstracts from the *subj.upper()* domain to read, \none\
+  \ abstract per Task. \nFor each abstract, you will identify complex, domain-specific\
+  \ concepts or jargon \nthat contribute to increased difficulty of reading and understanding\
   \ the passage.\n\n\nAfter identifying these terms, you will then give a 1-2 sentence\
   \ definition of each term\nan additional simplified definition, and then \nrate\
   \ the effort taken and understanding gained from that process.\n\nYou will be paid\
