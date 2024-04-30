@@ -12,60 +12,55 @@ instructions: |
   You will be shown 10 scientific abstracts from the <DOMAIN> domain to read, 
   one abstract per Task. 
   For each abstract, you will identify complex, domain-specific concepts or jargon 
-  that contribute to increased difficulty of reading and understanding the passage.
+  that contribute to the difficulty of reading and understanding the passage.
 
 
-  After identifying these terms, you will then give a 1-2 sentence definition of each term
-  an additional simplified definition, and then 
+  After identifying these terms, you will then give a 1-2 sentence definition of each term, as well as
+  an additional simplified definition. You will also 
   rate the effort taken and understanding gained from that process.
   
-  You will be paid $TODO upon **successful** completion of this task (each abstract must be annotated, and annotations must be of high quality).
+  You will be paid $TODO upon **successful** completion of all Tasks 
+  (each abstract must be annotated for terms, and terms must have high quality Edits).
   
-  **Please use the Google Chrome web browser to do this task.** The interface will not work on other browsers.
+  **Please use a Chromium-based web browser** (ideally Google Chrome; Brave, MS Edge acceptable) to do this study. The interface will not work on other browsers.
 
   ---
 
   ## Task Instructions
 
-  Please take a look at this [Example Interface](https://chicagohai.github.io/thresh/?gh=kazhou/prolific_defs/main/configs/term_defs_example.yml&d=kazhou/prolific_defs/main/data/example_data.json).
+  In a new window, please take a look at this [Example Interface](https://chicagohai.github.io/thresh/?gh=kazhou/prolific_defs/main/configs/term_defs_example.yml&d=kazhou/prolific_defs/main/data/example_data.json){:target="_blank"} to see what the task will look like.
 
   As you proceed, save your work by clicking the `up-arrow-cloud` (Save Progress) button.
   Restore your last save by clicking the `down-arrow-cloud` (Restore Last Save) button. 
   **Refreshing this browser window will remove existing progress, so make sure to save often!**
   
-  ### 1. Identifying terms
+  ### 1. [Annotate] Identifying terms
   Read through the provided abstract. 
   As you encounter complex terms or jargon, 
   identify them in the following steps:
   - Click the "+ Add Edit" button
   - Select the "Annotate Term" button
-  - Highlight the term in the abstract. Ensure that it appears after "Selected span: <term>"
+  - Highlight the term in the abstract. Ensure that it appears after "Selected: <term>"
   - Click "Save"
 
-  You will likely have at least 3-5 terms identified per abstract.
+  Aim to identify 3-5 terms per abstract, though more is okay.
 
-  ### 2. Editing annotations
+  ### 2. [Edit] Editing annotations
   After identifying unfamiliar terms in your initial readthrough, you will then add Edits to each term.
 
-  Start by clicking the pencil icon next to a term annotation.
-
-  There are 6 questions to answer.
+  Start by clicking the pencil icon next to a term annotation, and answer all questions in the Edit form.
 
   #### 2.1 Write a definition
   A "definition" is a statement that includes the **meaning** of the term. 
   Please write a 1-2 sentence definition for each term you identify.
   Definitions should be comprehensive as possible. 
+  
   You may use Google Search to look up resources to assist you -- 
   if you do, **please open a new browser window/tab to do so**.
-  Also, please keep track of roughly how long you spend searching, 
-  and do not spend more than 5 minutes searching.
-
-  If you wish to use Google Search, please use the following search format `define:"<term>"`, 
-  substituting your identified term for `<term>` (make sure to include the quotation marks), e.g., 
-  >define:"transformer"
+  Also, please keep track of roughly how long you spend searching, and do not spend more than 5 minutes searching. 
+  If you cannot define the term within 5 minutes, you may leave the Edit form blank (this should not happen often).
   
-  If the results are for the incorrect domain, modify your search to include the domain as well, e.g., 
-  >define:"transformer" (computer science)
+  **You should NOT use LLMs to generate definitions for you.**
 
   An example definition for the term "antecedents" (legal) might be:
   ```
@@ -81,21 +76,27 @@ instructions: |
   Antecedents are the bad things that a person accused of a crime has done before. 
   ```
 
+  **Do not use Google Search or LLMs to simplify for you.**
+
   #### 2.3 Link sources
   If you use Google Search to help you write the definition(s) of the term, please link the sources you used in the text box.
-  If you refered to multiple links, separate the links with a space (Space bar).
+  If you refered to multiple links, separate the links with a new line (Enter).
 
-  #### 2.4 Specifying domains
-  Did you need to specify the domain in your search? If you did not search, select "No". 
-
-  #### 2.5 Time spent
-  Estimate roughly how much time you spent searching for and writing up the definition in 2.1, and report it according to the following scale:
+  #### 2.4 & 2.5 Time spent
+  Estimate roughly how much time you spent (1) writing your initial definition, and (2) simplifying your definition. Report it according to the following scale:
   - 1 - very little (< 1min)
   - 2 - medium (1-2min)
   - 3 - a lot (> 3min)
+  
+  #### 2.6 Specifying domains
+  Some terms may have definitions in multiple domains, e.g., `"transformer" (computer science)` vs. `"transformer" (electrical engineering)`.
 
-  #### 2.6 Understanding
-  After writing a definition for the term, report how well you now understand the meaning of this term on the following scale:
+  If you used Google Search and specified the domain to find the correct definition, select "Yes". 
+  If you did not need to specify the domain, select "No".
+  If you did not use Google Search, select "No". 
+
+  #### 2.7 Understanding
+  After this process, report how well you now understand the meaning of this term on the following scale:
   - 1 - not at all
   - 2 - a little
   - 3 - roughly
@@ -104,10 +105,10 @@ instructions: |
 
   It is ok to not understand the term! Just report honestly.
   
-  ### 3. Edit "Final comments"
+  ### 3. [Final Comments] Final comprehension
   Once you have identified terms and defined them in their annotation frames, 
-  please edit the "Comments" entry to answer a final question surrounding your comprehension of the abstract
-  after defining the unfamiliar terms.
+  please edit the "Final Comments" entry to answer a final question surrounding your comprehension of the abstract
+  before and after defining the unfamiliar terms.
   
   If you do not see this entry, 
   please add this entry yourself by clicking "+ Add Edit" > "Comments" > Save,
@@ -119,8 +120,22 @@ instructions: |
   After you have completed all 10 Tasks following the above instructions, 
   you can submit your annotations by clicking the `Submit` button on the last Task.
   You may close your browser window once you have submitted.
-
+  
   **Thank you!**
+
+
+  # TL;DR: 
+  ```
+  - Read the abstract
+  - [Annotate] Identify 3-5 complex terms (save progress!)
+  - For each term [Edit]:
+    - Write a definition, Google Search is ok but LLMs are NOT OK (no ChatGPT!)
+    - Write a simplified definition by yourself (no Google or LLMs now!)
+    - Cite sources
+    - Report time spent
+    - Save progress often!
+  - [Final Comments] Answer final comprehension question (and save progress again!)
+  ```
 
   ---
 
@@ -144,33 +159,55 @@ edits:
     annotation:
       - name: defn_original
         label: "Definition"
-        question: "Q1. Write a comprehensive definition of this term in 1-2 sentences that would aid a reader’s understanding of this abstract. Make sure to follow the instructions above for how to format your search."
+        question: "Write a comprehensive definition of this term in 1-2 sentences that would aid a reader’s understanding of this abstract."
         options: textarea
-      - name: defn_simple
-        label: "Simple Definition"
-        question: "Q2. Now, rewrite the same definition using simpler language, as if you were defining it to a 10 year old."
-        options: textarea
+      # - name: difficulty_question
+      #   label: "Level"
+      #   question: "Q5. What difficulty level would you assign this term?"
+      #   options: 
+      #     - name: level_1
+      #       label: "Easy"
+      #     - name: level_2
+      #       label: "Medium"
+      #     - name: level_3
+      #       label: "Hard"
+      #     - name: level_4
+      #       label: "Very hard"
       - name: sources_question
         label: "Sources"
-        question: "Q3. Please copy and paste the links of any sources you used to help write your above definitions."
+        question: "Please copy and paste the links of any sources you used to help write your above definitions."
         options: textarea 
-      - name: multisense_questions
-        label: "Multisense"
-        question: "Q4. Did you need to specify the domain in your search?"
-        options: binary
-      - name: difficulty_question
+      - name: time_question_1
         label: "Time"
-        question: "Q5. Roughly how much time did you spend defining this term in Q1?"
+        question: "Roughly how much time did you spend defining this term (including search time)?"
         options: 
           - name: time_1
             label: "Not much (under 1min)"
           - name: time_2
-            label: "Some time (1-2min)"
+            label: "Some time (1-3min)"
           - name: time_3
             label: "A lot (over 3min)"
+      - name: defn_simple
+        label: "Simple Definition"
+        question: "Now, rewrite the same definition using simpler language, as if you were defining it to a 10 year old."
+        options: textarea
+      - name: time_question_2
+        label: "Time"
+        question: "Roughly how much time did you spend simplifying your definition?"
+        options: 
+          - name: time_1
+            label: "Not much (under 1min)"
+          - name: time_2
+            label: "Some time (1-3min)"
+          - name: time_3
+            label: "A lot (over 3min)"
+      - name: multisense_questions
+        label: "Multisense"
+        question: "Did you need to specify the domain in your search?"
+        options: binary
       - name: category_question
         label: "Understanding"
-        question: "Q6. On a scale of 1-5, how well do you understand the meaning of this term now?"
+        question: "On a scale of 1-5, how well do you understand the meaning of this term now?"
         options: 
           - name: und_1
             label: "1 - not at all"
@@ -183,13 +220,17 @@ edits:
           - name: und_5
             label: "5 - very well"
   - name: overall_comments
-    label: "Comments"
+    label: "Final Comments"
     color: green
     icon: fa-font
     annotation:
+      - name: initial_understanding
+        label: "Initial"
+        question: "How well did you understand the abstract BEFORE defining the terms?"
+        options: likert-3
       - name: overall_understanding
         label: "Overall"
-        question: "How much do these definitions help you understand the overall abstract?"
+        question: "How much do these definitions help you understand the overall abstract now?"
         options: likert-3
       - name: elaboration
         label: "More"
