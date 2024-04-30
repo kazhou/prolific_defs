@@ -101,64 +101,64 @@ instructions: "# Please read carefully before starting!\n\n## Description\nYou w
   \ high quality Edits).\n\n**Please use a Chromium-based web browser** (ideally Google\
   \ Chrome; Brave, MS Edge acceptable) to do this study. The interface will not work\
   \ on other browsers.\n\n---\n\n## Task Instructions\n\nIn a new window, please take\
-  \ a look at this [Example Interface](https://chicagohai.github.io/thresh/?gh=kazhou/prolific_defs/main/configs/term_defs_example.yml&d=kazhou/prolific_defs/main/data/example_data.json){:target=\"\
-  _blank\"} to see what the task will look like.\n\nAs you proceed, save your work\
-  \ by clicking the `up-arrow-cloud` (Save Progress) button.\nRestore your last save\
-  \ by clicking the `down-arrow-cloud` (Restore Last Save) button. \n**Refreshing\
-  \ this browser window will remove existing progress, so make sure to save often!**\n\
-  \n### 1. [Annotate] Identifying terms\nRead through the provided abstract. \nAs\
-  \ you encounter complex terms or jargon, \nidentify them in the following steps:\n\
-  - Click the \"+ Add Edit\" button\n- Select the \"Annotate Term\" button\n- Highlight\
-  \ the term in the abstract. Ensure that it appears after \"Selected: <term>\"\n\
-  - Click \"Save\"\n\nAim to identify 3-5 terms per abstract, though more is okay.\n\
-  \n### 2. [Edit] Editing annotations\nAfter identifying unfamiliar terms in your\
-  \ initial readthrough, you will then add Edits to each term.\n\nStart by clicking\
-  \ the pencil icon next to a term annotation, and answer all questions in the Edit\
-  \ form.\n\n#### 2.1 Write a definition\nA \"definition\" is a statement that includes\
-  \ the **meaning** of the term. \nPlease write a 1-2 sentence definition for each\
-  \ term you identify.\nDefinitions should be comprehensive as possible. \n\nYou may\
-  \ use Google Search to look up resources to assist you -- \nif you do, **please\
-  \ open a new browser window/tab to do so**.\nAlso, please keep track of roughly\
-  \ how long you spend searching, and do not spend more than 5 minutes searching.\
-  \ \nIf you cannot define the term within 5 minutes, you may leave the Edit form\
-  \ blank (this should not happen often).\n\n**You should NOT use LLMs to generate\
-  \ definitions for you.**\n\nAn example definition for the term \"antecedents\" (legal)\
-  \ might be:\n```\nAntecedents are the previous convictions and history of bad behavior\
-  \ of a defendant in a criminal case. \n```\n\n#### 2.2 Provide a simplified definition\n\
-  After writing your first definition, please rewrite the definition in simpler language,\
-  \ \nas if you were defining the term to a 10-year-old. Please keep this definition\
-  \ to 1-2 sentences.\n\nAn example simplified definition for the term \"antecedents\"\
-  \ (legal) might be:\n```\nAntecedents are the bad things that a person accused of\
-  \ a crime has done before. \n```\n\n**Do not use Google Search or LLMs to simplify\
-  \ for you.**\n\n#### 2.3 Link sources\nIf you use Google Search to help you write\
-  \ the definition(s) of the term, please link the sources you used in the text box.\n\
-  If you refered to multiple links, separate the links with a new line (Enter).\n\n\
-  #### 2.4 & 2.5 Time spent\nEstimate roughly how much time you spent (1) writing\
-  \ your initial definition, and (2) simplifying your definition. Report it according\
-  \ to the following scale:\n- 1 - very little (< 1min)\n- 2 - medium (1-2min)\n-\
-  \ 3 - a lot (> 3min)\n\n#### 2.6 Specifying domains\nSome terms may have definitions\
-  \ in multiple domains, e.g., `\"transformer\" (computer science)` vs. `\"transformer\"\
-  \ (electrical engineering)`.\n\nIf you used Google Search and specified the domain\
-  \ to find the correct definition, select \"Yes\". \nIf you did not need to specify\
-  \ the domain, select \"No\".\nIf you did not use Google Search, select \"No\". \n\
-  \n#### 2.7 Understanding\nAfter this process, report how well you now understand\
-  \ the meaning of this term on the following scale:\n- 1 - not at all\n- 2 - a little\n\
-  - 3 - roughly\n- 4 - well\n- 5 - very well\n\nIt is ok to not understand the term!\
-  \ Just report honestly.\n\n### 3. [Final Comments] Final comprehension\nOnce you\
-  \ have identified terms and defined them in their annotation frames, \nplease edit\
-  \ the \"Final Comments\" entry to answer a final question surrounding your comprehension\
-  \ of the abstract\nbefore and after defining the unfamiliar terms.\n\nIf you do\
-  \ not see this entry, \nplease add this entry yourself by clicking \"+ Add Edit\"\
-  \ > \"Comments\" > Save,\nthen edit the entry to answer the questions there.\n\n\
-  ---\n\n## Submission\nAfter you have completed all 10 Tasks following the above\
-  \ instructions, \nyou can submit your annotations by clicking the `Submit` button\
-  \ on the last Task.\nYou may close your browser window once you have submitted.\n\
-  \n**Thank you!**\n\n\n# TL;DR: \n```\n- Read the abstract\n- [Annotate] Identify\
-  \ 3-5 complex terms (save progress!)\n- For each term [Edit]:\n  - Write a definition,\
-  \ Google Search is ok but LLMs are NOT OK (no ChatGPT!)\n  - Write a simplified\
-  \ definition by yourself (no Google or LLMs now!)\n  - Cite sources\n  - Report\
-  \ time spent\n  - Save progress often!\n- [Final Comments] Answer final comprehension\
-  \ question (and save progress again!)\n```\n\n---\n"
+  \ a look at this [Example Interface](https://chicagohai.github.io/thresh/?gh=kazhou/prolific_defs/main/configs/term_defs_example.yml&d=kazhou/prolific_defs/main/data/example_data.json)\
+  \ to see what the task will look like.\n\nAs you proceed, save your work by clicking\
+  \ the `up-arrow-cloud` (Save Progress) button.\nRestore your last save by clicking\
+  \ the `down-arrow-cloud` (Restore Last Save) button. \n**Refreshing this browser\
+  \ window will remove existing progress, so make sure to save often!**\n\n### 1.\
+  \ [Annotate] Identifying terms\nRead through the provided abstract. \nAs you encounter\
+  \ complex terms or jargon, \nidentify them in the following steps:\n- Click the\
+  \ \"+ Add Edit\" button\n- Select the \"Annotate Term\" button\n- Highlight the\
+  \ term in the abstract. Ensure that it appears after \"Selected: <term>\"\n- Click\
+  \ \"Save\"\n\nAim to identify 3-5 terms per abstract, though more is okay.\n\n###\
+  \ 2. [Edit] Editing annotations\nAfter identifying unfamiliar terms in your initial\
+  \ readthrough, you will then add Edits to each term.\n\nStart by clicking the pencil\
+  \ icon next to a term annotation, and answer all questions in the Edit form.\n\n\
+  #### 2.1 Write a definition\nA \"definition\" is a statement that includes the **meaning**\
+  \ of the term. \nPlease write a 1-2 sentence definition for each term you identify.\n\
+  Definitions should be comprehensive as possible. \n\nYou may use Google Search to\
+  \ look up resources to assist you -- \nif you do, **please open a new browser window/tab\
+  \ to do so**.\nAlso, please keep track of roughly how long you spend searching,\
+  \ and do not spend more than 5 minutes searching. \nIf you cannot define the term\
+  \ within 5 minutes, you may leave the Edit form blank (this should not happen often).\n\
+  \n**You should NOT use LLMs to generate definitions for you.**\n\nAn example definition\
+  \ for the term \"antecedents\" (legal) might be:\n```\nAntecedents are the previous\
+  \ convictions and history of bad behavior of a defendant in a criminal case. \n\
+  ```\n\n#### 2.2 Provide a simplified definition\nAfter writing your first definition,\
+  \ please rewrite the definition in simpler language, \nas if you were defining the\
+  \ term to a 10-year-old. Please keep this definition to 1-2 sentences.\n\nAn example\
+  \ simplified definition for the term \"antecedents\" (legal) might be:\n```\nAntecedents\
+  \ are the bad things that a person accused of a crime has done before. \n```\n\n\
+  **Do not use Google Search or LLMs to simplify for you.**\n\n#### 2.3 Link sources\n\
+  If you use Google Search to help you write the definition(s) of the term, please\
+  \ link the sources you used in the text box.\nIf you refered to multiple links,\
+  \ separate the links with a new line (Enter).\n\n#### 2.4 & 2.5 Time spent\nEstimate\
+  \ roughly how much time you spent (1) writing your initial definition, and (2) simplifying\
+  \ your definition. Report it according to the following scale:\n- 1 - very little\
+  \ (< 1min)\n- 2 - medium (1-2min)\n- 3 - a lot (> 3min)\n\n#### 2.6 Specifying domains\n\
+  Some terms may have definitions in multiple domains, e.g., `\"transformer\" (computer\
+  \ science)` vs. `\"transformer\" (electrical engineering)`.\n\nIf you used Google\
+  \ Search and specified the domain to find the correct definition, select \"Yes\"\
+  . \nIf you did not need to specify the domain, select \"No\".\nIf you did not use\
+  \ Google Search, select \"No\". \n\n#### 2.7 Understanding\nAfter this process,\
+  \ report how well you now understand the meaning of this term on the following scale:\n\
+  - 1 - not at all\n- 2 - a little\n- 3 - roughly\n- 4 - well\n- 5 - very well\n\n\
+  It is ok to not understand the term! Just report honestly.\n\n### 3. [Final Comments]\
+  \ Final comprehension\nOnce you have identified terms and defined them in their\
+  \ annotation frames, \nplease edit the \"Final Comments\" entry to answer a final\
+  \ question surrounding your comprehension of the abstract\nbefore and after defining\
+  \ the unfamiliar terms.\n\nIf you do not see this entry, \nplease add this entry\
+  \ yourself by clicking \"+ Add Edit\" > \"Comments\" > Save,\nthen edit the entry\
+  \ to answer the questions there.\n\n---\n\n## Submission\nAfter you have completed\
+  \ all 10 Tasks following the above instructions, \nyou can submit your annotations\
+  \ by clicking the `Submit` button on the last Task.\nYou may close your browser\
+  \ window once you have submitted.\n\n**Thank you!**\n\n\n# TL;DR: \n```\n- Read\
+  \ the abstract\n- [Annotate] Identify 3-5 complex terms (save progress!)\n- For\
+  \ each term [Edit]:\n  - Write a definition, Google Search is ok but LLMs are NOT\
+  \ OK (no ChatGPT!)\n  - Write a simplified definition by yourself (no Google or\
+  \ LLMs now!)\n  - Cite sources\n  - Report time spent\n  - Save progress often!\n\
+  - [Final Comments] Answer final comprehension question (and save progress again!)\n\
+  ```\n\n---\n"
 interface_text:
   typology:
     context_label: Title
