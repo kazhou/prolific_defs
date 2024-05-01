@@ -20,7 +20,7 @@ instructions: |
   rate the effort taken and understanding gained from that process.
   
   You will be paid $TODO upon **successful** completion of all Tasks 
-  (each abstract must be annotated for terms, and terms must have high quality Edits).
+  (each abstract must be annotated for terms, and terms must have high quality definitions and responses).
   
   **Please use a Chromium-based web browser** (ideally Google Chrome; Brave, MS Edge acceptable) to do this study. The interface will not work on other browsers.
 
@@ -28,27 +28,30 @@ instructions: |
 
   ## Task Instructions
 
-  In a new window, please take a look at this [Example Interface](https://chicagohai.github.io/thresh/?gh=kazhou/prolific_defs/main/configs/term_defs_example.yml&d=kazhou/prolific_defs/main/data/example_data.json) to see what the task will look like.
+  In a new tab/window, please take a look at this [Example Interface](https://chicagohai.github.io/thresh/?gh=kazhou/prolific_defs/main/configs/term_defs_example.yml&d=kazhou/prolific_defs/main/data/example_data.json) to see what the task will look like.
 
-  As you proceed, save your work by clicking the `up-arrow-cloud` (Save Progress) button.
-  Restore your last save by clicking the `down-arrow-cloud` (Restore Last Save) button. 
+  As you proceed, save your work by clicking the Save Progress button ![cloud icon w/ up-arrow](https://i.ibb.co/6mDKbrL/Up-arrow-cloud.png).
+  Restore your last save by clicking the Restore Last Save button ![cloud icon w/ down-arrow](https://i.ibb.co/x1YmhNy/Down-arrow-cloud.png).
+
   **Refreshing this browser window will remove existing progress, so make sure to save often!**
   
   ### 1. [Annotate] Identifying terms
   Read through the provided abstract. 
   As you encounter complex terms or jargon, 
   identify them in the following steps:
-  - Click the "+ Add Edit" button
-  - Select the "Annotate Term" button
-  - Highlight the term in the abstract. Ensure that it appears after "Selected: <term>"
-  - Click "Save"
+  - Click the "+ Add Edit" button ![](https://i.ibb.co/VMVvbp9/Add-edit.png)
+  - Select the "Annotate Term" button  ![](https://i.ibb.co/4NrDQG5/Annotate-term.png)
+  - Highlight the term in the abstract. Ensure that it appears after "Selected: <term>", e.g., ![](https://i.ibb.co/FH674BQ/Selected-span.png)
+  - Click "Save" to save the term ![](https://i.ibb.co/SyjqqDR/Save-edit.png)
 
   Aim to identify 3-5 terms per abstract, though more is okay.
 
   ### 2. [Edit] Editing annotations
   After identifying unfamiliar terms in your initial readthrough, you will then add Edits to each term.
 
-  Start by clicking the pencil icon next to a term annotation, and answer all questions in the Edit form.
+  Start by clicking the pencil icon ![](https://i.ibb.co/NK0GVzm/Pencil.png) next to a term annotation. Alternatively, you can click directly on the underlined term in the abstract to open the Edit form, e.g., ![](https://i.ibb.co/8r8mDcH/Example-edit-2.png). 
+  
+  Answer all questions in the Edit form for each term. Click "Save" to save your Edits ![](https://i.ibb.co/SyjqqDR/Save-edit.png).
 
   #### 2.1 Write a definition
   A "definition" is a statement that includes the **meaning** of the term. 
@@ -107,8 +110,8 @@ instructions: |
   
   ### 3. [Final Comments] Final comprehension
   Once you have identified terms and defined them in their annotation frames, 
-  please edit the "Final Comments" entry to answer a final question surrounding your comprehension of the abstract
-  before and after defining the unfamiliar terms.
+  please edit the "Final Comments" entry to answer a final question surrounding your comprehension of the abstract before and after defining the unfamiliar terms.
+  ![](https://i.ibb.co/D9KBXkf/Final-comments.png)
   
   If you do not see this entry, 
   please add this entry yourself by clicking "+ Add Edit" > "Comments" > Save,
@@ -118,7 +121,10 @@ instructions: |
 
   ## Submission
   After you have completed all 10 Tasks following the above instructions, 
-  you can submit your annotations by clicking the `Submit` button on the last Task.
+  you can submit your annotations by clicking the `Submit` button on the last Task:
+
+  ![](https://i.ibb.co/HDZsZmk/Submit-button.png)
+
   You may close your browser window once you have submitted.
   
   **Thank you!**
