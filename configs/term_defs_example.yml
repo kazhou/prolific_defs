@@ -184,7 +184,7 @@ edits:
         question: "Please copy and paste the links of any sources you used to help write your above definitions."
         options: textarea 
       - name: time_question_1
-        label: "Time"
+        label: "Defn Time"
         question: "Roughly how much time did you spend defining this term (including search time)?"
         options: 
           - name: time_1
@@ -198,7 +198,7 @@ edits:
         question: "Now, rewrite the same definition using simpler language, as if you were defining it to a 10 year old."
         options: textarea
       - name: time_question_2
-        label: "Time"
+        label: "Simpl Time"
         question: "Roughly how much time did you spend simplifying your definition?"
         options: 
           - name: time_1
@@ -225,6 +225,7 @@ edits:
             label: "4 - well"
           - name: und_5
             label: "5 - very well"
+          required: true
   - name: overall_comments
     label: "Final Comments"
     color: green
